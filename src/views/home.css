@@ -127,6 +127,9 @@
   justify-content: flex-start;
   background-color: #fff;
 }
+.home-mobile-menu.open {
+  transform: translateX(0);
+}
 .home-top {
   width: 100%;
   display: flex;
@@ -161,6 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+      cursor: pointer;
 }
 .home-icon04 {
   width: 34px;
@@ -2032,4 +2036,17 @@
   .home-email {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 900px) {
+
+
+  .home-image03 {
+    display: none;
+  }
+
+  .home-image04 {
+    display: none;
+  }
+
 }
