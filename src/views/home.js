@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 
-import DangerousHTML from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 import { FcMenu } from 'react-icons/fc'
-import { GrLinkPrevious, GrLinkNext } from 'react-icons/gr'
+
 import { BsArrowUpRight } from 'react-icons/bs'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
@@ -21,9 +20,6 @@ const Home = (props) => {
   return (
     <div className='home-container'>
       <Helmet>
-        <title>
-          Green
-        </title>
         <meta property='og:title' content='Remarkable template' />
       </Helmet>
       <div className='home-navbar'>
@@ -33,7 +29,6 @@ const Home = (props) => {
             <svg viewBox='0 0 1024 1024' className='home-icon'>
               <path d='M128 128h768v768h-768z'></path>
             </svg>
-            <span className='home-text01'>Green</span>
           </div>
           <div data-thq='thq-navbar-nav' data-role='Nav' className='home-desktop-menu'>
             <nav className='home-links'>
@@ -41,10 +36,7 @@ const Home = (props) => {
                 <span>Our offers</span>
               </button>
               <button className='home-button01 button'>
-                <span>Get a fast quote</span>
-              </button>
-              <button className='home-button02 button'>
-                Menu
+                <span>Get a fast <BsArrowUpRight size={16} /></span>
               </button>
             </nav>
           </div>
@@ -69,9 +61,6 @@ const Home = (props) => {
               </button>
               <button className='home-button04 button'>
                 <span>Get a fast quote</span>
-              </button>
-              <button className='home-button05 button'>
-                Menu
               </button>
             </nav>
           </div>
@@ -344,16 +333,16 @@ const Home = (props) => {
       </section>
       <Footer></Footer>
       <div className='
-                                                            Rights
-                                                                  '>
+                                                                                            Rights
+                                                                                                  '>
         <p className='
-                                                              Rights-Reserved
-                                                            '>
+                                                                                              Rights-Reserved
+                                                                                            '>
           © 2023 Green | All Rights Reserved
         </p>
         <p className='
-                                                              Rights-Made
-                                                    '>
+                                                                                              Rights-Made
+                                                                                    '>
           Made with ❤️ fahad
         </p>
         <p className='Rights-Made1'>
