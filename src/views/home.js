@@ -8,7 +8,9 @@ import { BsArrowUpRight } from 'react-icons/bs'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
 import Footer from '../components/footer'
+
 import './home.css'
+import Slider from '../components/Slider'
 
 const Home = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -142,110 +144,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className='home-testimonials'>
-        <div className='home-container1'>
-          <div className='home-content2'>
-            <div className='active-quote quote'>
-              <img
-                alt='image'
-                src='https://images.unsplash.com/photo-1637684666772-1f215bfd0f5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80'
-                role='quote-avatar'
-                className='home-image07' />
-              <p role='quote-content' className='home-quote1'>
-                At our site, we believe in the power of community. That's why we offer a range of resources to help you learn from others who share your passion for plants. From
-                forums and discussion boards to video tutorials and expert tips
-              </p>
-              <div className='home-author'>
-                <span role='quote-author' className='home-name'><span>Adetola Afolabi</span></span>
-                <span role='quote-origin' className='home-origin'><span>CEO of Planting</span></span>
-              </div>
-            </div>
-            <div className='quote'>
-              <img
-                alt='image'
-                src='https://images.unsplash.com/photo-1559418162-0d309d8d10a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
-                role='quote-avatar'
-                className='home-image08' />
-              <p role='quote-content' className='home-quote3'>
-                <span className='home-text19'>"This is a very fascinating website&quot</span>
-                <br></br>
-                <span>"I love the way it looks and the way it works. It's very easy to use and I love the way it looks and the way it works. It's very easy to use and I love the way it looks and the way &quot</span>
-                <br></br>
-              </p>
-              <div className='home-author1'>
-                <span role='quote-author' className='home-name1'>Maaz Ijaz</span>
-                <span role='quote-origin' className='home-origin1'><span></span></span>
-              </div>
-            </div>
-            <div className='quote'>
-              <img
-                alt='image'
-                src='https://images.unsplash.com/photo-1586716402203-79219bede43c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3RyYWl0fGVufDB8fHx8MTY2OTcyODk4OA&amp;ixlib=rb-4.0.3&amp;w=200'
-                role='quote-avatar'
-                className='home-image09' />
-              <p role='quote-content' className='home-quote5'>
-                <span className='home-text23'>"I really love how well this is done! :D&quot</span>
-                <br></br>
-                <span>"I really love how well this is done! :D I really love how well this is done! :D I really love how well this is done! :D I really love how well this is done! :D I really love how well &quot</span>
-                <br></br>
-                <span></span>
-                <br></br>
-              </p>
-              <div className='home-author2'>
-                <span role='quote-author' className='home-name2'></span>
-                <span role='quote-origin' className='home-origin2'></span>
-              </div>
-            </div>
-            <div className='quote'>
-              <img
-                alt='image'
-                src='https://images.unsplash.com/photo-1559138741-441acdebf148?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
-                role='quote-avatar'
-                className='home-image10' />
-              <p role='quote-content' className='home-quote7'>
-                <span className='home-text29'>"Nothing will every beat this!&quot</span>
-                <br></br>
-                <span></span>
-                <br></br>
-              </p>
-              <div className='home-author3'>
-                <span role='quote-author' className='home-name3'><span>Rebo</span></span>
-                <span role='quote-origin' className='home-origin3'>Jordy</span>
-              </div>
-            </div>
-            <div className='home-controls'>
-              <div id='quote-previous' className='home-previous'>
-                <GrLinkPrevious className='home-image11' />
-              </div>
-              <div id='quote-next' className='home-next'>
-                <GrLinkNext className='home-image12' />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <DangerousHTML html={`<script>
-              const quotes = document.querySelectorAll('.quote')
-              const quoteControls = document.querySelectorAll('.home-controls')
-              let currentQuote = 0
-              quotes[currentQuote].classList.add('active-quote')
-              quoteControls.forEach((control) => {
-                control.addEventListener('click', () => {
-                  quotes[currentQuote].classList.remove('active-quote')
-                  if (control.id === 'quote-next') {
-                    currentQuote = (currentQuote + 1) % quotes.length
-                  } else {
-                    if (currentQuote === 0) {
-                      currentQuote = quotes.length
-                    }
-                    currentQuote = (currentQuote - 1) % quotes.length
-                  }
-                  quotes[currentQuote].classList.add('active-quote')
-                })
-              })
-            </script>`}></DangerousHTML>
-        </div>
-      </section>
+      <Slider/>
       <section className='home-services1'>
         <div className='home-heading1'>
           <h2 className='home-text35'>Take a look at the latest articles</h2>
@@ -445,16 +344,16 @@ const Home = (props) => {
       </section>
       <Footer></Footer>
       <div className='
-                                Rights
-                                      '>
+                                                            Rights
+                                                                  '>
         <p className='
-                                  Rights-Reserved
-                                '>
+                                                              Rights-Reserved
+                                                            '>
           © 2023 Green | All Rights Reserved
         </p>
         <p className='
-                                  Rights-Made
-                        '>
+                                                              Rights-Made
+                                                    '>
           Made with ❤️ fahad
         </p>
         <p className='Rights-Made1'>

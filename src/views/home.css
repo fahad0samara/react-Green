@@ -541,6 +541,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  color: rgb(255, 255, 255);
 }
 .home-name {
   color: rgb(255, 255, 255);
@@ -2037,6 +2038,22 @@
   }
 }
 
+.quote-navigation button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-left: 10px;
+
+  height: 40px;
+  justify-content: center;
+  outline: none;
+  padding: 0;
+  transition: background-color 0.2s ease-in-out;
+  width: 40px;
+
+}
 @media only screen and (max-width: 900px) {
 
 
