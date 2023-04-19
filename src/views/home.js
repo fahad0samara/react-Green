@@ -4,7 +4,6 @@ import DangerousHTML from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 import { FcMenu } from 'react-icons/fc'
 import { GrLinkPrevious, GrLinkNext } from 'react-icons/gr'
-import { Link } from 'react-router-dom'
 import { BsArrowUpRight } from 'react-icons/bs'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
@@ -15,7 +14,6 @@ const Home = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   function toggleMenu () {
-    console.log('isMenuOpen:', isMenuOpen)
     setIsMenuOpen(!isMenuOpen)
   }
   return (
@@ -49,7 +47,7 @@ const Home = (props) => {
             </nav>
           </div>
           <div data-thq='thq-burger-menu' className='home-burger-menu'>
-            <FcMenu onClick={toggleMenu} className='home-hamburger' />
+            <FcMenu size={28} onClick={toggleMenu} className='' />
           </div>
           <div data-thq='thq-mobile-menu' className={`home-mobile-menu ${isMenuOpen ? 'open' : ''}`}>
             <div className='home-top'>
@@ -60,7 +58,7 @@ const Home = (props) => {
                 </svg>
               </div>
               <div className='home-menu-close'>
-                <AiFillCloseCircle size={24} onClick={toggleMenu} />
+                <AiFillCloseCircle size={26} onClick={toggleMenu} />
               </div>
             </div>
             <nav className='home-links1'>
@@ -446,7 +444,24 @@ const Home = (props) => {
         </div>
       </section>
       <Footer></Footer>
-      <div>
+      <div className='
+                                Rights
+                                      '>
+        <p className='
+                                  Rights-Reserved
+                                '>
+          © 2023 Green | All Rights Reserved
+        </p>
+        <p className='
+                                  Rights-Made
+                        '>
+          Made with ❤️ fahad
+        </p>
+        <p className='Rights-Made1'>
+          <a className='' href='#'>Privacy Policy</a>
+          <span>|</span>
+          <a className='' href='#'>Terms of Service</a>
+        </p>
       </div>
     </div>
   )

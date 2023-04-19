@@ -105,8 +105,7 @@
   justify-content: space-between;
 }
 .home-hamburger {
-  width: 100px;
-  object-fit: cover;
+  
   cursor: pointer;
 }
 .home-mobile-menu {
